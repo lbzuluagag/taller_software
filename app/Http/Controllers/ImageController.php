@@ -44,7 +44,6 @@ class ImageController extends Controller
     
     public function show()
     {
-        $data = [];
         $totalQuotes = (count(ImageController::$quotes));
         $randomNumber = (rand(0,($totalQuotes-1)));
         $url = ImageController::$quotes[$randomNumber];
