@@ -11,6 +11,7 @@ RUN composer install \
    --no-scripts \
    --prefer-dist
 
+RUN php artisan key:generate
 RUN chmod -R 777 storage
 RUN chmod -R 777 bootstrap/cache/
 RUN a2enmod rewrite
