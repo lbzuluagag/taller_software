@@ -13,4 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', 'App\Http\Controllers\ImageController@index')->name('index');
 Route::get('/random-images', 'App\Http\Controllers\ImageController@show')->name('show.image');

@@ -30,17 +30,11 @@ class ImageController extends Controller
 
 );
 
-    public function create()
+    public function index()
     {
-        return view('images.create');
+        return "esto funciona";
     }
 
-    public function store(Request $request)
-    {
-        $path = $request->file('image')->store('images', 's3');
-
-        return $path;
-    }
     
     public function show()
     {
